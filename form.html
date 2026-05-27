@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            width: 70%;
+            margin: auto;
+            
+        }
+
+        h1{
+            text-align: center;
+            color: darkblue;
+           margin-top:20px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .gender{
+            margin-bottom: 20px;
+        }
+
+        .gender input{
+            width: auto;
+        }
+
+        button{
+            background-color: darkblue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: navy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration Form</h1>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password">
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter phone number">
+
+            <label>Date of Birth</label>
+            <input type="date">
+
+            <label>Select Course</label>
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>React</option>
+            </select>
+
+            <label>Gender</label>
+
+            <div class="gender">
+                <input type="radio" name="gender"> Male
+
+                <input type="radio" name="gender"> Female
+            </div>
+
+            <label>Address</label>
+            <textarea placeholder="Enter address"></textarea>
+
+            <button type="submit">Register</button>
+
+        </form>
+        <h2 style="color: darkblue; font-size: 24px; text-align: center;">Student Data Table</h2>
+        <table border="1" cellspacing="0" cellpadding="20" style="margin-top: 20px; table-layout:fixed; width:100%" >
+
+                <tr style="background-color: darkblue; color: white;">
+                <th>id</th>
+                <th>name</th>
+                <th>course</th>
+                <th>city</th>
+            </tr>
+            <tr style="font-size: 20px;">
+                <td>1</td>
+<td>Rahul</td>
+<td>html</td>
+<td>mumbai</td>
+            </tr>
+            <tr style="font-size: 20px;">
+                <td>2</td>
+                <td>sneha</td>
+                <td>css</td>
+                <td>pune</td>
+            
+            </tr>
+            <tr style="font-size: 20px;">
+                <td>3</td>
+                <td>Amit</td>
+                <td>javascript</td>
+                <td>nashik</td>
+            </tr>
+            <tr style="font-size: 20px;">
+                <td>4</td>
+                <td> Priya</td>
+                <td>react</td>
+                <td>nagpur</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
